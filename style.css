@@ -233,10 +233,51 @@ media quary for mobail phone
     }
     .blog, .course_row{
         flex-basis: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .course_row{
-        justify-content: center;
+        align-items: center;
+    }
+    .blog_info{
+        margin-left: 0;
+    }
+    .course_details{
+        margin-top: 16px;
+    }
+    .course_title{
+        font-size: 16px;
+    }
+    .icon{
+        margin-top: 19px;
+    }
+    nav ul{
+        display: none;
+    }
+}
+/* --------------------------------------------
+media quary for tablet and larger mobail phone
+-----------------------------------------------*/
+@media only screen and (min-width:481px) and (max-width:868px) { 
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container, .second_container{
+        width: 90%;
+    }
+    .navbar{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .blog, .course_row{
+        flex-basis: 100%;
+        flex-direction: column;
+        
+    }
+    .players, .blog{
+        padding-left: 15%;
+    }
+    .course_row{
+        align-items: center;
     }
     .blog_info{
         margin-left: 0;
