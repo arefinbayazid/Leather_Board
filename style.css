@@ -101,7 +101,6 @@ main top player style rules
 }
 .player h4{
     margin-left: 16px;
-    font-weight: 500;
     font-size: 18px;
     line-height: 27px;
 }
@@ -151,7 +150,7 @@ main latest course style rules
     padding: 23px 28px 22px;
     margin-top: 26px;
     border-radius: 5px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
 }
 .course_row{
     display: flex;
@@ -161,13 +160,13 @@ main latest course style rules
     height: 270px;
     width: 253px;
     margin-right: 25px;
-    padding: 15px 0 0 13px;
+    padding: 15px 0px 0 13px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 .course_thramnail img{
     height: 105px;
-    width: 225px;
+    width: 220px;
 }
 .course_title{
     font-size: 20px;
@@ -179,11 +178,11 @@ main latest course style rules
     line-height: 17px;
     color: #ED6B4F;
     margin-top: 8px;
-    margin-bottom: 19px;
 }
 .icon{
     display: flex;
     align-items: center;
+    margin-top: 19px;
 }
 .rateing{
     margin-right: 11px;
@@ -217,4 +216,41 @@ main latest course style rules
     color: #FF4A60;
     font-weight: 600;
     font-size: 15px;
+}
+/* --------------------------
+media quary for mobail phone
+----------------------------*/
+@media only screen and (max-width:480px) {
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container, .second_container{
+        width: 90%;
+    }
+    .navbar{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .blog, .course_row{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .course_row{
+        justify-content: center;
+    }
+    .blog_info{
+        margin-left: 0;
+    }
+    .course_details{
+        margin-top: 16px;
+    }
+    .course_title{
+        font-size: 16px;
+    }
+    .icon{
+        margin-top: 19px;
+    }
+    nav ul{
+        display: none;
+    }
 }
